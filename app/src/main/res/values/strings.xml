@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Llantas de bicicleta</string>
+    <string name="title_catalogo">Catálogo</string>
+    <string name="title_shoppingCart">Carrito de compras</string>
+
+    <string-array name="tamanos_llantas_array">
+        <item>26 in</item>
+        <item>27.5 in</item>
+        <item>29 in</item>
+    </string-array>
+
+    <string-array name="tamanos_llantas_array1">
+        <item>26 in</item>
+        <item>27 in</item>
+        <item>28 in</item>
+        <item>29 in</item>
+    </string-array>
+
+    <string-array name="tamanos_llantas_array2">
+        <item>26 in</item>
+        <item>27 in</item>
+        <item>28 in</item>
+    </string-array>
+
+    <string-array name="tamanos_llantas_array3">
+        <item>20 in</item>
+        <item>22 in</item>
+        <item>24 in</item>
+    </string-array>
+</resources>
