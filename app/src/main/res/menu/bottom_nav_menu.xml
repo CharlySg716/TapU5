@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/navigation_catalogo"
-        android:icon="@drawable/catalogo"
+        android:icon="@drawable/catalogo1"
         android:title="@string/title_catalogo" />
 
     <item
         android:id="@+id/navigation_carrito"
-        android:icon="@drawable/carrito"
+        android:icon="@drawable/carrito1"
         android:title="@string/title_shoppingCart" />
 
 </menu>
