@@ -38,14 +38,15 @@ class BiciMontana : AppCompatActivity() {
 
         // Configuración del Spinner
         val spinnerTamanoLlanta: Spinner = findViewById(R.id.spinner_tamano_llanta)
-        ArrayAdapter.createFromResource(
-            this,
-            R.array.tamanos_llantas_array,
-            android.R.layout.simple_spinner_item
-        ).also { adapter ->
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            spinnerTamanoLlanta.adapter = adapter
-        }
+
+        // Crear un ArrayAdapter usando el layout personalizado para cada elemento
+        val adapter = ArrayAdapter(this, R.layout.spinner_item, resources.getStringArray(R.array.tamanos_llantas_array))
+
+        // Configurar el fondo del dropdown
+        adapter.setDropDownViewResource(R.layout.spinner_item) // Usa el layout de fondo personalizado
+
+        // Asignar el adapter al spinner
+        spinnerTamanoLlanta.adapter = adapter
 
         // Configuración de los botones de incremento y decremento
         val quantityText: TextView = findViewById(R.id.quantity_text)
