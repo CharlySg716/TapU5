@@ -30,32 +30,35 @@
         app:navGraph="@navigation/mobile_navigation" />
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@id/nav_view"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="20dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nav_host_fragment_activity_main">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/product_details_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:visibility="visible">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/product_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:ellipsize="end"
                 android:gravity="center"
                 android:text="Llanta para\n bicicleta de montaña\n"
+                android:textColor="@android:color/white"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                android:ellipsize="end"
-                android:textColor="@android:color/white"
                 android:visibility="visible" />
 
             <ImageView
@@ -71,20 +74,20 @@
                 android:id="@+id/product_detail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:ellipsize="end"
                 android:gravity="center"
                 android:text="\nLlantas anchas con taqueado profundo, perfectas \npara terrenos irregulares como lodo, grava o roca.\n Ofrecen máximo agarre y resistencia."
-                android:textSize="14sp"
-                android:ellipsize="end"
                 android:textColor="@android:color/white"
+                android:textSize="14sp"
                 android:visibility="visible" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:text="Tamaño:"
-                android:textSize="16sp"
                 android:textColor="@android:color/white"
-                android:layout_marginTop="16dp" />
+                android:textSize="16sp" />
 
             <Spinner
                 android:id="@+id/spinner_tamano_llanta"
@@ -92,15 +95,15 @@
                 android:layout_height="48dp"
                 android:layout_marginTop="8dp"
                 android:backgroundTint="@color/white"
-                android:dropDownSelector="@color/medium_black"/>
+                android:dropDownSelector="@color/medium_black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:text="Cantidad:"
-                android:textSize="16sp"
                 android:textColor="@android:color/white"
-                android:layout_marginTop="16dp" />
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -143,8 +146,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="\n"
                 android:layout_marginEnd="8dp"
+                android:text="\n"
                 android:textColor="@android:color/white"
                 android:visibility="visible" />
 
@@ -154,8 +157,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:textSize="18sp"
                 android:textColor="@android:color/white"
+                android:textSize="18sp"
                 android:visibility="visible" />
 
             <TextView
@@ -163,8 +166,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="\n"
                 android:layout_marginEnd="8dp"
+                android:text="\n"
                 android:textColor="@android:color/white"
                 android:visibility="visible" />
 
@@ -176,6 +179,16 @@
                 android:gravity="center"
                 android:text="Añadir al Carrito"
                 android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="\n\n"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
